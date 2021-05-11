@@ -22,13 +22,13 @@
 \end{tabular*}
 
 %--------INTERESTS------------
-\section{About Me}
+\section{Profile}
 
-\small{Passionate about learning and developing new technologies as well as diving into complex systems---especially cloud software infrastructure, real-time data pipelines, kubernetes, and release automation. After 7 years of bioinformatics computing work in academia and 2.5 years of professional software engineering on a Data Engineering team at Amazon, I am now seeking roles in the biotechnology industry where I can make use of my biosciences background. I am an extremely fast learner and given the opportunity to focus, I can rapidly become an expert in any technology. This resume is a mini DevOps project, auto-built using \href{https://circleci.com/gh/RPSeq/resume}{CircleCI.}}
+\small{Bioinformatics scientist turned cloud data and infrastructure engineer. 7 years of bioinformatics computing work in academia and 2.5 years of professional software engineering on a Data Engineering team at Amazon.}
 
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Technical Skills}
 \resumeSubHeadingListStart
 
 \resumeItem{Languages}
@@ -45,35 +45,22 @@
 
 \resumeSubheading
 {eero, an Amazon company}{San Francisco, CA}
-{Software Development Engineer}{January 2019 -- Present}
+{Software Development Engineer, Data}{January 2019 -- Present}
 
 \resumeItemListStart
-
-\resumeItem{General Data Engineering}
-{Develop robust automated data pipelines for both customer-facing product features and internal fleet data analytics with Airflow, AWS, Terraform, Kafka, Kubernetes, Pinot, Redshift, Databricks, and many additional technologies.}
-
-\resumeItem{Real-time Data Systems}
-{Build and maintain data systems powering customer-facing application features. These features provide customers with visual dashboards for observing device bandwith usage as well as security and content filtering events across a fleet of $>$1.5 million eero routers. Utilizes Kafka for event streaming and Kafka Connect running in Kubernetes to sync (HOW MANY / s) events to a large HBase cluster, while serving (HOW MANY / s) queries across the entire customer base. Also design and build all of the cloud infrastructure for a new Pinot cluster running in k8s. This powers sub-second queries over very large datasets with continuous realtime ingestion of fleet data from Kafka. Apache Superset is used as the data visualization and exploration tool.}
 
 \resumeItem{Data Infrastructure and Operations}
-{Design, provision, maintain, and scale Kubernetes clusters in EKS to power most of our data systems. All cloud infrastructure is provisioned with Terraform and deployments automated with Gitlab. System and application metrics, monitoring and alerting are built using Prometheus and Grafana. Build and maintain the following services using GitLab and Helm deploying to k8s clusters: Apache Airflow, Apache Pinot, Apache Superset, Kafka Connect, Scala stream-processing services, various Kafka sinks, Redash, }
+{Design, provision, maintain, and scale k8s clusters to power most of our data systems. All cloud infrastructure is provisioned with Terraform and deployments automated with GitLab. Databricks and Spark for custom batch and streaming transformations. Metrics, monitoring and alerting using Prometheus and Grafana. Build and maintain a collection of services using GitLab and Helm deploying to k8s clusters: Apache Airflow, Apache Pinot, Apache Superset, Kafka Connect sinks, Scala stream-processing apps.}
+
+\resumeItem{Real-time Data Systems}
+{Build and maintain data systems powering customer-facing application features. These features provide customers with visual dashboards for observing device bandwith usage as well as security and content filtering events across a fleet of $>$1.5 million eero routers. Kafka for event streaming and Kafka Connect running in k8s to sync up to 60k records per second to a large HBase cluster, while ALSO serving on average 60k customer queries per second. Also design and build all of the cloud infrastructure for a new Pinot cluster running in k8s. This powers sub-second queries over very large datasets with continuous realtime ingestion of fleet data from Kafka. Apache Superset is used as the data visualization and exploration tool.}
 
 \resumeItemListEnd
 
-\resumeSubheading
-{Circle Computer Resources, Inc.}{Cedar Rapids, IA}
-{Remote IT Procurement Specialist}{November 2018 -- January 2019}
-
-\resumeItemListStart
-
-\resumeItem{IT Procurement}
-{Secure reliable internet services for small businesses in hard-to-reach areas. Negotiate with ISPs for service to meet our clients' needs.}
-
-\resumeItemListEnd
 
 \resumeSubheading
 {Girihlet, Inc., Oakland Genomics Center}{Oakland, CA}
-{Bionformaticist + IT Engineer}{Aug 2018 -- Sep 2018}
+{Bionformaticist + IT Engineer}{Aug 2018 -- Oct 2018}
 
 \resumeItemListStart
 
@@ -85,6 +72,7 @@
 
 \resumeItemListEnd
 
+
 \resumeSubheading
 {The McDonnell Genome Institute, Washington University}{St Louis, MO}
 {Graduate Research Scientist, Ira Hall Lab, Computational Genetics}{Feb 2015 -- April 2018}
@@ -95,12 +83,13 @@
 {Process and analyze population-level whole-genome sequencing data to improve our understanding of structural variation in human genomes. Computation is done in a Linux environment with Bash pipelines, distributed across a high-performance computing cluster. Pipelines often use tools combining Bayesian statistics and machine learning approaches, packaged and deployed via Docker containers.}
 
 \resumeItem{Single-cell Sequencing}
-{Develop novel computational and molecular biology methods for whole-genome sequencing of single mammalian neurons. Process up to 10 TB of raw Illumina sequencing data within a 36 hour period.}
+{Develop novel computational and molecular biology methods for whole-genome sequencing of single mammalian neurons. Process up to 10 TB of raw Illumina sequencing data in 36 hours.}
 
 \resumeItem{Teaching Assistant}
-{Advise students in characterizing the genome sequences of unknown bacteriophages. Hands-on computer lab course using bioinformatics tools to identify genes and predict their function, as well as classifying novel phages into existing phylogenetic groups.}
+{Advise students in characterizing the genome sequences of unknown bacteriophages. Lab course using bioinformatics tools to identify genes, predict their function, and classify novel phages into existing phylogenetic groups.}
 
 \resumeItemListEnd
+
 
 \resumeSubheading
 {University of Iowa}{Iowa City, IA}
@@ -130,29 +119,22 @@
 {University of Iowa}{Iowa City, IA}
 {BS, Microbiology and Informatics}{Aug. 2009 -- May 2014}
 
-\resumeItemListStart
-
-\resumeItem{Relevant Coursework}
-{Intro to Computer Science, Programming for Informatics, Biostatistics, Programming with C++, Bioinformatics Techniques, Networking and Security, Human Computer Interaction, Database Management, Strategic Management of Technology, Informatics Capstone Project}
-
-\resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %--------Publications------------
-\section{Publications}
-\resumeSubHeadingListStart
-
-\publicationItem{Jennifer L. Hazen, Michael A. Duran, Ryan P. Smith*, Alberto R. Rodriguez, Greg S. Martin, Sergey Kupriyanov, Ira M. Hall, Kristin K. Baldwin}
-{ ``Using Cloning to Amplify Neuronal Genomes for Whole-Genome Sequencing and Comprehensive Mutation Detection and Validation'' Genomic Mosaicism in Neurons and Other Cell Types. Neuromethods, vol 131. September 2017}{https://doi.org/10.1007/978-1-4939-7280-7\_9}
-
-\publicationItem{Ryan P. Smith*, Jesse D. Riordan, Charlotte R. Feddersen, Adam J. Dupuy}
-{ ``A Hybrid Adenoviral Vector System Achieves Efficient Long-term Gene Expression in the Liver via PiggyBac Transposition'' Human Gene Therapy, 26(6):377-85. June 2015}{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4492551/}
-
-\publicationItem{Jesse D. Riordan, Luke Drury, Ryan P. Smith*, Ben T. Brett, Adam J. Dupuy}
-{ ``Sequencing Methods and Datasets to Improve Functional Interpretation of Sleeping Beauty Mutagenesis Screens'' BMC Genomics, 15(1): 1150. December 2014}{https://www.ncbi.nlm.nih.gov/pubmed/25526783}
-
-\resumeSubHeadingListEnd
+%\section{Publications}
+%\resumeSubHeadingListStart
+%
+%\publicationItem{Jennifer L. Hazen, Michael A. Duran, Ryan P. Smith*, Alberto R. Rodriguez, Greg S. Martin, Sergey Kupriyanov, Ira M. Hall, Kristin K. Baldwin}
+%{ ``Using Cloning to Amplify Neuronal Genomes for Whole-Genome Sequencing and Comprehensive Mutation Detection and Validation'' Genomic Mosaicism in Neurons and Other Cell Types. Neuromethods, vol 131. September 2017}{https://doi.org/10.1007/978-1-4939-7280-7\_9}
+%
+%\publicationItem{Ryan P. Smith*, Jesse D. Riordan, Charlotte R. Feddersen, Adam J. Dupuy}
+%{ ``A Hybrid Adenoviral Vector System Achieves Efficient Long-term Gene Expression in the Liver via PiggyBac Transposition'' Human Gene Therapy, 26(6):377-85. June 2015}{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4492551/}
+%
+%\publicationItem{Jesse D. Riordan, Luke Drury, Ryan P. Smith*, Ben T. Brett, Adam J. Dupuy}
+%{ ``Sequencing Methods and Datasets to Improve Functional Interpretation of Sleeping Beauty Mutagenesis Screens'' BMC Genomics, 15(1): 1150. December 2014}{https://www.ncbi.nlm.nih.gov/pubmed/25526783}
+%
+%\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
