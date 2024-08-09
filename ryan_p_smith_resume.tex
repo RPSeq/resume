@@ -24,7 +24,7 @@
 %--------INTERESTS------------
 \section{Profile}
 
-\small{Bioinformatics scientist turned cloud data infrastructure engineer. Strong background with 7 years of bioinformatics computing work in academia and 3 years of professional engineering on the eero Data team at Amazon.}
+\small{Bioinformatics scientist turned data infrastructure engineer. Strong background with 7 years of bioinformatics computing work in academia and 5 years of professional data engineering at Amazon and Recursion.}
 
 
 %--------PROGRAMMING SKILLS------------
@@ -35,7 +35,7 @@
 {Python, Bash, R (ggplot), awk, SQL, C++, golang, \LaTeX, Mathematica, Java, Scala}
 
 \resumeItem{Technologies}
-{Linux/Unix, Kubernetes, Helm, AWS (S3, EC2, Redshift, EKS, EMR), GCP(GKE), Grafana, Prometheus, PostgreSQL, Terraform, Looker, git, Docker, Airflow, CircleCI, GitLab CI, Databricks, Spark, HBase, Pinot, Druid, Avro/Parquet, Kafka, GATK, bedtools, bwa-mem}
+{Linux/Unix, Kubernetes, Slurm, HPC, Helm, AWS (S3, EC2, Redshift, EKS, EMR), GCP(GKE), Grafana, Prometheus, PostgreSQL, Terraform, Looker, git, Docker, Airflow, CircleCI, GitLab CI, Databricks, Spark, HBase, Pinot, Druid, Avro/Parquet, Kafka, GATK, bedtools, bwa-mem}
 
 \resumeSubHeadingListEnd
 
@@ -43,23 +43,37 @@
 \section{Experience}
 \resumeSubHeadingListStart
 
+
+\resumeSubheading
+{Recursion}{Salt Lake City, UT}
+{Senior Software Engineer}{September 2020 -- Present}
+
+\resumeItemListStart
+
+\resumeItem{Inception Labs}
+{Work with senior leadership to develop novel product ideas and take them through proof-of-concept. Rapidly design and build a large-scale Perturbseq sample processing pipeline using our on-prem HPC cluster.}
+
+\resumeItem{Transcriptomics Data Processing}
+{Workflow orchestration. Design and build out automated RNAseq data processing systems in GCP. This includes a metadata tracking service and cloud computing pipelines to process millions of cell samples from an automated laboratory process.}
+
+\resumeItemListEnd
+
 \resumeSubheading
 {eero, an Amazon company}{San Francisco, CA}
-{Software Development Engineer, Data}{January 2019 -- Present}
+{Software Development Engineer, Data}{January 2019 -- September 2020}
 
 \resumeItemListStart
 
 \resumeItem{Data Infrastructure and Operations}
-{Design, provision, maintain, and scale k8s clusters to power our data systems. All cloud infrastructure is provisioned with Terraform and deployments automated with GitLab. Databricks and Spark for custom batch and streaming transformations. Metrics, monitoring and alerting using Prometheus and Grafana. Manage a diverse collection of k8s data services using GitLab and Helm.}
+{Design, provision, maintain, and scale k8s clusters to power our data systems. Provisioned with Terraform and automated deployments. Spark for custom batch and streaming transformations. Metrics, monitoring and alerting using Prometheus and Grafana. Manage a diverse collection of k8s data services.}
 
 \resumeItem{Real-time Data Systems}
-{Build and maintain data systems powering customer-facing features and internal tools. Customer features provide visual dashboards for observing device bandwidth usage as well as security and content filtering events across a fleet of more than 6 million eero routers. Kafka for event streaming and Kafka Connect running in k8s to sync up to 60k records per second to a large HBase cluster, while simultaneously serving 60k customer queries per second on average.}
+{Build and maintain data systems powering customer-facing features and internal tools. Visual dashboards for observing device bandwidth usage as well as security and content filtering events across a fleet of more than 6 million routers. Kafka for ingesting up to 60k records per second to a large HBase cluster, while simultaneously serving 60k customer queries per second.}
 
 \resumeItem{Data Analytics Platform}
-{Design and provision all cloud infrastructure for a data platform built around Pinot in k8s. This powers sub-second queries over very large datasets with continuous realtime ingestion of fleet data from Kafka, using Superset for data visualization and exploration.}
+{Design and provision AWS infrastructure for a data platform built around Pinot in k8s. Powers sub-second queries over very large datasets with continuous realtime ingestion of fleet data from Kafka, using Superset for data visualization and exploration.}
 
 \resumeItemListEnd
-
 
 \resumeSubheading
 {Girihlet, Inc., Oakland Genomics Center}{Oakland, CA}
