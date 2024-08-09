@@ -35,7 +35,7 @@
 {Python, Bash, R (ggplot), awk, SQL, C++, golang, \LaTeX, Mathematica, Java, Scala}
 
 \resumeItem{Technologies}
-{Linux/Unix, Kubernetes, Slurm, HPC, Helm, AWS (S3, EC2, Redshift, EKS, EMR), GCP(GKE), Grafana, Prometheus, PostgreSQL, Terraform, Looker, git, Docker, Airflow, CircleCI, GitLab CI, Databricks, Spark, HBase, Pinot, Druid, Avro/Parquet, Kafka, GATK, bedtools, bwa-mem}
+{Linux/Unix, K8s, Slurm, HPC, Helm, AWS, GCP, Grafana, Terraform, Prometheus, Postgres, Docker, Airflow, Spark, HBase, Pinot, Druid, Avro/Parquet, Kafka, GATK, bedtools, bwa-mem}
 
 \resumeSubHeadingListEnd
 
@@ -68,7 +68,7 @@
 {Design, provision, maintain, and scale k8s clusters to power our data systems. Provisioned with Terraform and automated deployments. Spark for custom batch and streaming transformations. Metrics, monitoring and alerting using Prometheus and Grafana. Manage a diverse collection of k8s data services.}
 
 \resumeItem{Real-time Data Systems}
-{Build and maintain data systems powering customer-facing features and internal tools. Visual dashboards for observing device bandwidth usage as well as security and content filtering events across a fleet of more than 6 million routers. Kafka for ingesting up to 60k records per second to a large HBase cluster, while simultaneously serving 60k customer queries per second.}
+{Build and maintain data systems powering customer-facing features and internal tools. Visual dashboards for observing device bandwidth usage as well as security and content filtering events across a fleet of more than 6 million routers. Ingesting 60K records per second to a large HBase cluster, serving up to 100K customer queries per second.}
 
 \resumeItem{Data Analytics Platform}
 {Design and provision AWS infrastructure for a data platform built around Pinot in k8s. Powers sub-second queries over very large datasets with continuous realtime ingestion of fleet data from Kafka, using Superset for data visualization and exploration.}
@@ -81,11 +81,8 @@
 
 \resumeItemListStart
 
-\resumeItem{Bioinformatics}
-{Provide a quality control dashboard for Illumina short read data. General Bash, Python, and Perl scripting to automate mitochondrial genome variant calling.}
-
-\resumeItem{IT}
-{Upgrade and maintain the Oakland Genomics Center networks. Maintain two on-premises CentOS servers for data processing and web hosting (Apache, NGINX)}
+\resumeItem{Bioinformatics and IT}
+{Provide a QC dashboard for Illumina data. Bash, Python, and Perl scripting to automate mitochondrial genome variant calling. Upgrade and maintain the Oakland Genomics Center networks. Maintain two on-premises CentOS servers for data processing and web hosting (Apache, NGINX)}
 
 \resumeItemListEnd
 
@@ -97,7 +94,7 @@
 \resumeItemListStart
 
 \resumeItem{Distributed Computing, Bioinformatics}
-{Process and analyze population-level whole-genome sequencing data to improve our understanding of structural variation in human genomes. Computation is done in a Linux environment with Bash pipelines, distributed across a high-performance computing cluster. Pipelines often use tools combining Bayesian statistics and machine learning approaches, packaged and deployed via Docker containers.}
+{Process and analyze population-level whole-genome sequencing data to investigate structural variation in human genomes. Computation in a large HPC environment. Pipelines often use tools combining Bayesian statistics and machine learning approaches.}
 
 \resumeItem{Single-cell Sequencing}
 {Develop novel computational and molecular biology methods for whole-genome sequencing of single mammalian neurons. Process up to 10 TB of raw Illumina sequencing data in 36 hours.}
