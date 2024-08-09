@@ -4,6 +4,9 @@ jobs:
         docker:
             - image: rpseq/docker-latex
         steps:
+            - add_ssh_keys:
+                fingerprints:
+                    - "SHA256:oERAa0T1oiwr1Klci0ZuT+E7bLs/UWYNclJRu1AaKTA"
             - checkout
             - run:
                 name: config
